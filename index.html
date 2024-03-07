@@ -1,11 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FN Tube</title>
+
+    <!-- * tailwindcss and daisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- * inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- * coustom css -->
+    <link rel="stylesheet" href="styles/style.css">
+
 </head>
-<body>
-    <h1>Hello world</h1>
+<body class="font-inter">
+    <header class="container mx-auto p-4">
+        <nav class="flex justify-between items-center border-b-2 pb-10">
+            <div>
+                <h1 class="text-3xl font-bold"><span class="text-red-600">FN</span> Tube</h1>
+            </div>
+            <div><button class="btn">Sort by view</button></div>
+            <div>
+                <button class="btn bg-red-600 text-white px-6">Blog</button>
+            </div>
+        </nav>
+    </header>
 </body>
 </html>
